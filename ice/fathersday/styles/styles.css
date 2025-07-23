@@ -1,0 +1,51 @@
+/* Add your CSS here to style your father's day page */
+p {
+    font-family: Arial;
+    font-size: 16px;
+    color: darkblue;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color:aliceblue;
+}
+h1 {
+    font-family: Arial;
+    font-size: 50px;
+    color: darkblue;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: aliceblue;
+}
+h2 {
+    font-family: Arial;
+    font-size: 30px;
+    color: darkblue;
+    border-bottom: 2px solid yellow; 
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+body {
+    background-color: lightblue;
+    font-family: Arial;
+}
+nav {
+    color: darkblue;
+    font-family: Arial;
+    margin: 20px;
+    padding: 10px;
+}
+footer {
+    font-family: Arial;
+    color: darkblue;
+    margin: 20px;
+    padding: 10px;
+}

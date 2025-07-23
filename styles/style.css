@@ -1,0 +1,46 @@
+body {
+    background: ivory;
+}
+#wrapper {
+    background: skyblue;
+    width: 900px;
+    margin: auto;
+    border : 3px solid pink;
+    border-radius: 10px;
+    padding: 30px;
+}
+header img{
+    width: 100px;
+}
+/* we can do display: inline: sits within the line of text like a word or block: starts on a new line and can set width */
+header h1 {
+    display: inline;
+    font-size: 3em;
+    float: right;
+}
+nav {
+    background: ivory;
+    color: white;
+    width: 100%;
+    border: darkcyan solid 4px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+footer form{
+    background: skyblue;
+    width: 180px;
+    padding:20px;
+    border: 3px dotted white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}

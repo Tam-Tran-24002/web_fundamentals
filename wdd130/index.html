@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyPortal - Design Document Example</title>
+  <style>
+    /* Body background and text! */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* Header styling */
+    header {
+      background-color: #004080; /* navy blue */
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+  
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+  
+    nav ul li a:hover {
+      color: #ffcc00; /* gold highlight */
+    }
+  
+    /* Main section styling */
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+  
+    section {
+      background-color: white;
+      padding: 20px 30px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    }
+  
+    h1, h2 {
+      color: #004080;
+    }
+  
+    ul li {
+      margin-bottom: 8px;
+    }
+  
+    /* Image styling */
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+  
+    /* Form styling */
+    form {
+      margin-top: 20px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #004080;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 1rem;
+    }
+  
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: #ffcc00;
+      outline: none;
+    }
+  
+    button {
+      background-color: #004080;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    button:hover {
+      background-color: #003366;
+    }
+  
+    /* Footer styling */
+    footer {
+      background-color: #00264d;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+    }
+  
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+  
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <div class="logo">My Portal</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="../wwr/index.html">WWR</a></li>
+        <li><a href="../ice/gallery/gallery.html">ICE</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="client_report.html" target="_blank">Client Report</a></li>
+      </ul>
+    </nav>             
+  </header>  
+  <main>
+    <section id="home">
+      <h1>Welcome to My Portal!</h1>
+      <img src="images/1e620ef8ba0abe594e2267d94dd06991_t.jpeg" alt="Home" />
+    </section>
+  
+    <section id="wwr">
+      <h2>WWR: White Water Rafting Site Plan</h2>
+      <p>This section showcases my WWR (White Water Rafting) project. It includes my planning document, layout ideas, and the actual rafting website I built during the course.</p>
+      <ul>
+        <li><a href="../wwr/site-plan-rafting.html" target="_blank">View Site Plan</a></li>
+        <li><a href="../wwr/index.html" target="_blank">Visit WWR Website</a></li>
+      </ul>
+    </section>
+  
+    <section id="ice">
+      <h2>ICE Activities (In-Class Exercises)</h2>
+      <p>Here are some of the challenges and activities I completed during class to improve my web development skills:</p>
+      <ul>
+        <li><a href="../ice/gallery/gallery.html" target="_blank">Gallery Challenge</a></li>
+        <li><a href="../ice/favorite_devo/favdevo.html" target="_blank">Favorite Devotionals</a></li>
+        <li><a href="../ice/prophet_cards/nelson.html" target="_blank">Prophet Cards</a></li>
+      </ul>
+    </section>
+    <section id="reports">
+      <h2>Project Reports</h2>
+      <table style="width:100%; border-collapse: collapse; background-color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+        <thead style="background-color: #004080; color: white;">
+          <tr>
+            <th style="padding: 12px; text-align: left;">Role</th>
+            <th style="padding: 12px; text-align: left;">Report</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background-color: #f9f9f9;">
+            <td style="padding: 12px; font-weight: bold;">Client</td>
+            <td style="padding: 12px;">
+              I am happy with the product. I like the layout and structure. It was easy to navigate and understand the information. I wish there was more color contrast for accessibility, and more detailed explanations for each feature.
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; font-weight: bold;">Lead Developer</td>
+            <td style="padding: 12px;">
+              I feel confident in the site we produced. I ensured all team members followed design principles and implemented responsive techniques. If we had more time, we would improve accessibility, increase contrast, and include image alt text.
+            </td>
+          </tr>
+          <tr style="background-color: #f9f9f9;">
+            <td style="padding: 12px; font-weight: bold;">Junior Developer</td>
+            <td style="padding: 12px;">
+              I enjoyed building this project. I gained a better understanding of how to use HTML and CSS. One challenge I faced was using Flexbox and CSS Grid. I still want to practice that, along with learning how to use DevTools.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>I am Tam Tran, a Data Science student at BYU–Idaho. I enjoy working with data, building websites, watching shows, and spending time playing with dogs.</p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Contact Me</legend>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+  
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+  
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+  
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>  
+  <footer>
+    <p>© 2025 TamTran.</p>
+    <address>
+      Contact me at <a href="mailto:tra24002@byui.edu">tra24002@byui.edu</a>
+    </address>
+  </footer>
+</body>
+</html>

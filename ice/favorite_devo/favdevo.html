@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 20px; /* row gap, column gap */
+  align-items: center;
+}
+  form label {
+  grid-column: span 1;
+  margin-bottom: 4px;
+  display: block;
+}
+  form input[type="text"] {
+  width: 90%;
+  padding: 6px;
+}
+  form input[type="submit"] {
+  grid-column: span 2;
+  width: 50%;
+  justify-self: center;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+  </style>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <!-- Add your devotional content here -->
+        <table>
+          <tr>
+            <th>Speaker</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>Dieter F. Uchtdorf</td>
+            <td>The Infinite Power of Hope</td>
+            <td>BYU Devotional, Provo, Utah</td>
+            <td>2008</td>
+          </tr>
+          <tr>
+            <td>Jeffrey R. Holland</td>
+            <td>However Long and Hard the Road</td>
+            <td>BYU Devotional, Provo, Utah</td>
+            <td>2009</td>
+          </tr>
+          <tr>
+            <td>Richard G. Scott</td>
+            <td>The Power of a Personal Testimony</td>
+            <td>BYU Devotional, Provo, Utah</td>
+            <td>2007</td>
+          </tr>
+          <tr>
+            <td>Dieter F. Uchtdorf</td>
+            <td>Of Things That Matter Most</td>
+            <td>BYU Devotional, Provo, Utah</td>
+            <td>2010</td>
+          </tr>
+        </table>
+        <h2>Forms</h2>
+
+        <form action="/action_page.php">
+          <label for="Speaker">Speaker:</label>
+          <input type="text" id="Speaker" name="Speaker" />
+        
+          <label for="Title">Title:</label>
+          <input type="text" id="Title" name="Title" />
+        
+          <label for="Location">Location:</label>
+          <input type="text" id="Location" name="Location" />
+        
+          <label for="Year">Year:</label>
+          <input type="text" id="Year" name="Year" />
+        
+          <input type="submit" value="Submit" />
+        </form> 
+</body>
+</html>
